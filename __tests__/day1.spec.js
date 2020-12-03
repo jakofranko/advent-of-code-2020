@@ -14,4 +14,10 @@ describe('day 1', () => {
             expect(expenseReporter(part1TestInput)).toBe(514579);
         });
     });
+
+    describe('part 2', () => {
+        it('should take an array of numbers, and find which three numbers sum 2020, and then multiply those numbers together', () => {
+            expect(expenseReporter(part1TestInput, 3)).toBe(241861950);
+        });
+    });
 });

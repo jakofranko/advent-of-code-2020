@@ -16,7 +16,8 @@
   ],
   "author": "Jake Franklin",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^26.6.3"
   }
 }
