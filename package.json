@@ -1,0 +1,22 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "1.0.0",
+  "description": "My solutions for the AOC 2020 challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "jest"
+  },
+  "keywords": [
+    "AOC",
+    "2020",
+    "advent",
+    "of",
+    "code"
+  ],
+  "author": "Jake Franklin",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
