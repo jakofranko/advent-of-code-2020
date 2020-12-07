@@ -11,7 +11,12 @@ const { part1Input: day2Part1Input } = require('./assets/day2.input');
 
 // Day 3
 const countTrees = require('./day3');
-const { part1Input: day3Part1Input } = require('./assets/day3.input');
+const { part1Input: day3Part1Input } = require('./assets/day3.input')
+
+// Day 4
+const { passportValidator } = require('./day4');
+const { part1Input: day4Part1Input } = require('./assets/day4.input')
+
 
 console.log('Day 1, part 1 answer:', expenseReporter(day1Part1Input));
 console.log('Day 1, part 2 answer:', expenseReporter(day1Part1Input, 3));
@@ -25,3 +30,5 @@ console.log('Day3, part 2 answer:',
     countTrees(day3Part1Input, 7, 1) *
     countTrees(day3Part1Input, 1, 2)
 );
+console.log('Day 4, part 1 answer:', passportValidator(day4Part1Input));
+console.log('Day 4, part 2 answer:', passportValidator(day4Part1Input, true));
