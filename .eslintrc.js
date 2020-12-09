@@ -14,5 +14,6 @@ module.exports = {
         "it": "readonly"
     },
     "rules": {
+        "no-unused-vars": "off"
     }
 };

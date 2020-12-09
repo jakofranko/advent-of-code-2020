@@ -5,7 +5,6 @@ function customsArithmicator(customForms, onlyCountEveryone = false) {
 
 function aggregateGroupAnswers(formGroups, onlyCountEveryone = false) {
     const forms = formGroups.split("\n");
-    const sum = (a, b) => a + b;
     // Build an object with a key that represents an answer letter,
     // and the value is the number of people in the group who answered
     // "yes", and then return the sum of those values.
