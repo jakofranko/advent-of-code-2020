@@ -29,6 +29,10 @@ const { part1Input: day6Part1Input } = require('./assets/day6.input');
 const { numBagsCanContain, numBagsIn } = require('./day7');
 const { part1Input: day7Part1Input } = require('./assets/day7.input');
 
+// Day 8
+const gameboy = require('./day8');
+const { part1Input: day8Part1Input } = require('./assets/day8.input');
+
 
 console.log('Day 1, part 1 answer:', expenseReporter(day1Part1Input));
 console.log('Day 1, part 2 answer:', expenseReporter(day1Part1Input, 3));
@@ -65,3 +69,5 @@ console.log('Day 6, part 1 answer:', customsArithmicator(day6Part1Input));
 console.log('Day 6, part 2 answer:', customsArithmicator(day6Part1Input, true));
 console.log('Day 7, part 1 answer:', numBagsCanContain(day7Part1Input, 'shiny gold'));
 console.log('Day 7, part 1 answer:', numBagsIn(day7Part1Input, 'shiny gold'));
+console.log('Day 8, part 1 answer:', gameboy(day8Part1Input));
+console.log('Day 8, part 1 answer:', gameboy(day8Part1Input, true));
