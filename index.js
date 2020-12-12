@@ -33,6 +33,10 @@ const { part1Input: day7Part1Input } = require('./assets/day7.input');
 const gameboy = require('./day8');
 const { part1Input: day8Part1Input } = require('./assets/day8.input');
 
+// Day 9
+const { xmasDecrypter, exploitFinder } = require('./day9');
+const { part1Input: day9Part1Input } = require('./assets/day9.input');
+
 
 console.log('Day 1, part 1 answer:', expenseReporter(day1Part1Input));
 console.log('Day 1, part 2 answer:', expenseReporter(day1Part1Input, 3));
@@ -71,3 +75,5 @@ console.log('Day 7, part 1 answer:', numBagsCanContain(day7Part1Input, 'shiny go
 console.log('Day 7, part 1 answer:', numBagsIn(day7Part1Input, 'shiny gold'));
 console.log('Day 8, part 1 answer:', gameboy(day8Part1Input));
 console.log('Day 8, part 1 answer:', gameboy(day8Part1Input, true));
+console.log('Day 9, part 1 answer:', xmasDecrypter(day9Part1Input.split("\n").map(n => +n)));
+console.log('Day 9, part 2 answer:', exploitFinder(day9Part1Input.split("\n").map(n => +n)));
