@@ -37,6 +37,10 @@ const { part1Input: day8Part1Input } = require('./assets/day8.input');
 const { xmasDecrypter, exploitFinder } = require('./day9');
 const { part1Input: day9Part1Input } = require('./assets/day9.input');
 
+// Day 10
+const joltDiffer = require('./day10');
+const { part1Input: day10Part1Input } = require('./assets/day10.input');
+
 
 console.log('Day 1, part 1 answer:', expenseReporter(day1Part1Input));
 console.log('Day 1, part 2 answer:', expenseReporter(day1Part1Input, 3));
@@ -77,3 +81,8 @@ console.log('Day 8, part 1 answer:', gameboy(day8Part1Input));
 console.log('Day 8, part 1 answer:', gameboy(day8Part1Input, true));
 console.log('Day 9, part 1 answer:', xmasDecrypter(day9Part1Input.split("\n").map(n => +n)));
 console.log('Day 9, part 2 answer:', exploitFinder(day9Part1Input.split("\n").map(n => +n)));
+
+console.log('Day 10, part 1 answer:', (() => {
+    const diffs = joltDiffer(day10Part1Input);
+    return diffs[1] * diffs[3];
+})());
