@@ -40,7 +40,7 @@ const test2Input = `28
 34
 10
 3`;
-const joltDiffer = require('../day10');
+const { joltDiffer, adapterPermutations } = require('../day10');
 
 describe('Day 10', () => {
     it('Part 1', () => {
@@ -53,4 +53,9 @@ describe('Day 10', () => {
             3: 10
         });
     });
+
+    it('Part 2', () => {
+        expect(adapterPermutations(test1Input)).toBe(8);
+        expect(adapterPermutations(test2Input)).toBe(19208);
+    })
 });

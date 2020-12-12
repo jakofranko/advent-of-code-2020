@@ -38,7 +38,7 @@ const { xmasDecrypter, exploitFinder } = require('./day9');
 const { part1Input: day9Part1Input } = require('./assets/day9.input');
 
 // Day 10
-const joltDiffer = require('./day10');
+const { joltDiffer, adapterPermutations } = require('./day10');
 const { part1Input: day10Part1Input } = require('./assets/day10.input');
 
 
@@ -86,3 +86,4 @@ console.log('Day 10, part 1 answer:', (() => {
     const diffs = joltDiffer(day10Part1Input);
     return diffs[1] * diffs[3];
 })());
+console.log('Day 10, part 2 answer:', adapterPermutations(day10Part1Input));
